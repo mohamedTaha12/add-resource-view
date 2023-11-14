@@ -1,0 +1,42 @@
+{
+    "dir": "ltr",
+    "resourceAdd": {
+        "addNewResource": "Add New Resource",
+        "active": "Active",
+        "saveChanges": "Save Changes",
+        "deleteResource": "deleteResource"
+    },
+    "resourceBasicInfo": {
+        "resourceName": "Resource Name",
+        "selectResourceType": "Select Resource Type",
+        "withinDay": "Within day",
+        "resirvePeriod": "Resirve Period (More than one day)"
+    },
+    "resourceTime": {
+        "resourceAvalibleTo": "Resource Avalible To",
+        "year": "Year",
+        "month": "Month",
+        "day": "Day",
+        "resourceTime": "Resource time",
+        "serviceTime": "Service time",
+        "timeIsConstant": "Time is constant",
+        "multipleBooking": "Multiple booking",
+        "onlyOneAmount": "Only one amount",
+        "bookingMoreThanOne": "Booking more than one person for the same appointment"
+    },
+    "resourceWeekDays": {
+        "supplierTime1": "Determine the supplier's working hours",
+        "supplierTime2": "Configure your week's settings from here. Simply move the sliders and add/remove break times to work hours",
+        "advancedSettings": "Advanced Settings",
+        "normalSettings": "Normal Settings",
+        "startTime": "Start Time",
+        "endTime": "End Time",
+        "saturday": "Saturday",
+        "sunday": "Sunday",
+        "monday": "Monday",
+        "tusday": "Tusday",
+        "wednesday": "Wednesday",
+        "thursday": "Thursday",
+        "friday": "Friday"
+    }
+}

@@ -1,0 +1,58 @@
+<div class="component-wrapper">
+    <header>
+        <div class="supplierTime">
+            <p (click)="printForm()">{{"resourceWeekDays.supplierTime1" | translate}}</p>
+            <p>
+                {{"resourceWeekDays.supplierTime2" | translate}}
+            </p>
+        </div>
+        <div class="supplier-settings-options">
+            <button type="button" [ngClass]="{'btn-primary': advancedSettingsButton}" class="btn mx-1"
+                (click)="toggleSettings('advancedSettings')">{{"resourceWeekDays.advancedSettings" |
+                translate}}</button>
+            <button type="button" [ngClass]="{'btn-primary': normalSettingsButton}" class="btn mx-1"
+                (click)="toggleSettings('normalSettings')">{{"resourceWeekDays.normalSettings" | translate}}</button>
+        </div>
+    </header>
+    <form [formGroup]="weekDaysForm">
+        <!-- <p *ngIf="weekDay.controls.dayName">{{weekDay.controls[0].dayName}}</p> -->
+
+        <div class="days-wrapper">
+            <div formArrayName="ingredients">
+                <div [formGroupName]="i" *ngFor="let xx of weekDay.controls; let i=index"
+                    class="days-inner-wrapper my-4">
+                    <div class="col-md-2" style="position: relative;">
+                        <mat-slide-toggle *ngIf="xx.value.newRow_Flag == 'add_circle'" class="day-name-activation"
+                            color="primary" [checked]="weekDay.value[i].dayStatus"
+                            (toggleChange)="weekDay.value[i].dayStatus = !weekDay.value[i].dayStatus"
+                            formControlName="dayStatus">
+                            {{weekDay.value[i].dayName}}
+                        </mat-slide-toggle>
+                        <img class="vector-1" *ngIf="xx.value.newRow_Flag != 'add_circle'"
+                            src="assets/images/fictor 1.png" alt="">
+                        <img class="vector-2" *ngIf="xx.value.newRow_Flag != 'add_circle'"
+                            src="../../assets/images/Vector 2.png" alt="">
+                    </div>
+                    <!-- "weekDay.value[i].isChecked = !weekDay.value[i].isChecked" -->
+                    <div *ngIf="weekDay.value[i].dayStatus" class="start-time-wrapper">
+                        <label for="startTime">{{"resourceWeekDays.startTime" | translate}}</label>
+                        <input id="startTime" type="time" class="form-control" formControlName="startTime">
+                    </div>
+
+                    <span *ngIf="weekDay.value[i].dayStatus" class="dashes"> -- </span>
+
+                    <div *ngIf="weekDay.value[i].dayStatus" class="end-time-wrapper">
+                        <label for="endTime">{{"resourceWeekDays.endTime" | translate}}</label>
+                        <input id="endTime" type="time" class="form-control" formControlName="endTime">
+                    </div>
+                    <!-- (click)="addWeekDay()" -->
+                    <mat-icon color="add-remove" *ngIf="weekDay.value[i].dayStatus" (click)="addRemoveWeekDay(xx)"
+                        class="add-row">
+                        {{weekDay.value[i].newRow_Flag}} </mat-icon>
+
+                </div>
+            </div>
+        </div>
+    </form>
+
+</div>

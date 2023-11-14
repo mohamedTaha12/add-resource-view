@@ -1,0 +1,32 @@
+<div class="first-section d-flex flex-column">
+
+  <div class="first-section-content px-3 my-auto d-flex align-items-center justify-content-center">
+
+    <div class="image-uploader">
+      <input type="file" class="file-input" (change)="onFileSelected($event)" #fileUpload>
+
+      <div class="file-upload">
+        <img class="image-uploaded" id="uploader-avatar" [src]="imageSrc || 'assets/images/upload-avatar.png'"
+          alt="your image" />
+        <img class="upload-img" src="assets/images/uploade-imgae-background.png" alt="">
+        <img class="upload-img2" (click)="fileUpload.click()" src="assets/images/uploade-imgae-background2.png" alt="">
+      </div>
+
+    </div>
+
+    <div class="image-input">
+      <label for="resourceName" class="form-label">{{"resourceBasicInfo.resourceName" | translate}}</label>
+      <input type="text" class="form-control resource-name-input" id="resourceName">
+    </div>
+  </div>
+</div>
+
+<div class="second-section d-flex align-items-center">
+  <div class="select-resource-type p-3">
+    <span>{{"resourceBasicInfo.selectResourceType" | translate}}</span>
+    <mat-radio-group aria-label="Select an option">
+      <mat-radio-button value="1">{{"resourceBasicInfo.withinDay" | translate}}</mat-radio-button>
+      <mat-radio-button value="2">{{"resourceBasicInfo.resirvePeriod" | translate}}</mat-radio-button>
+    </mat-radio-group>
+  </div>
+</div>

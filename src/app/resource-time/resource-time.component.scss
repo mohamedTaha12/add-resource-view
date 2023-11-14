@@ -1,0 +1,135 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  // for chrome
+  margin-left: 10px;
+}
+
+.resource-avaliability-input label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #92A1AD;
+}
+
+.resource-avaliability-input input {
+  text-align: right;
+  background-color: #F4EEEE;
+  height: 40px;
+  border: 1px solid #D9D9D9;
+}
+
+.resource-avaliability-wrapper {
+  position: relative;
+  margin-top: 10px;
+}
+
+.resource-avaliability-wrapper select {
+  position: absolute;
+  top: 32px;
+  height: 40px;
+  left: 0;
+  width: 86px;
+  background-color: #ECF1F6;
+}
+
+.resource-time-title {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #92A1AD;
+}
+
+.component-wrapper {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 9px;
+}
+
+mat-radio-button {
+  margin: 0 10px;
+  font-size: 11px;
+}
+
+// .resource-time-input {
+//   position: relative;
+//   display: inline-block;
+// }
+
+// .resource-time-input input {
+//   height: 44.92px;
+//   border-radius: 9px;
+//   border: 1px solid #D9D9D9;
+//   background: #F6F2F2
+// }
+
+:host ::ng-deep .p-inputnumber {
+  border-radius: 9px;
+  border: 1px;
+}
+
+:host ::ng-deep .p-inputnumber .p-inputnumber-input:enabled:focus,
+:host ::ng-deep .p-inputnumber .p-inputnumber-input {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 41.92px;
+  border-radius: 9px;
+  background-color: #F6F2F2;
+  border: 1px solid#D9D9D9;
+}
+
+:host ::ng-deep .p-inputnumber-button-down {
+  position: absolute;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px !important;
+  top: -8px;
+  left: 3%;
+}
+
+:host ::ng-deep .p-button-icon {
+  font-size: .6rem;
+  margin-top: 2px;
+}
+
+:host ::ng-deep .p-inputnumber-button-up {
+  position: absolute;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px !important;
+  top: -8px;
+  right: 3%;
+}
+
+
+.multiple-booking-title h3 {
+  color: #92A1AD;
+}
+
+:host ::ng-deep .mat-radio-button.mat-primary .mat-radio-outer-circle {
+  border: 3px solid #E0E5F2
+}
+
+:host ::ng-deep .mat-radio-button.mat-primary.mat-radio-checked .mat-radio-outer-circle {
+  border: 3px solid #0771DE
+}
+
+:host ::ng-deep .mat-radio-button.mat-primary.mat-radio-checked .mat-radio-inner-circle {
+  background-color: #0771DE;
+}
+
+:host ::ng-deep .mat-radio-button .mat-radio-ripple {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .resource-time-input,
+  .input-number {
+    margin: 20px 0;
+  }
+}

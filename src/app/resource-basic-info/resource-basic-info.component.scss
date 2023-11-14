@@ -1,0 +1,130 @@
+.first-section {
+  padding: 0;
+  height: 202.34px;
+  background: #FAF9F9;
+  border-radius: 12px;
+}
+
+
+
+.image-uploader {
+  position: relative;
+}
+
+input.resource-name-input {
+  width: 100%;
+  height: 48px;
+  background-color: #F4EEEE;
+  border: 1px solid #B2A6A6;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-upload {
+  position: relative;
+}
+
+#uploader-avatar {
+  width: 74px;
+  height: 91.4px;
+  border-radius: 37px;
+}
+
+img.upload-img {
+  position: absolute;
+  z-index: 1;
+  right: 50px;
+  top: -1px;
+  cursor: pointer;
+}
+
+img.upload-img2 {
+  position: absolute;
+  z-index: 2;
+  right: 56px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.image-input {
+  width: 100%;
+  margin: 0 25px;
+}
+
+.image-input label {
+  color: #92A1AD;
+}
+
+.image-input input {
+  padding: 0 20px;
+}
+
+
+
+.select-resource-type {
+  display: flex;
+
+  span,
+  mat-radio-button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #92A1AD;
+  }
+}
+
+.second-section {
+  margin-top: 29.5px;
+  height: 69.34px;
+  background: #FAF9F9;
+  border-radius: 9.5px;
+}
+
+mat-radio-group {
+  margin-right: 20px;
+}
+
+mat-radio-button {
+  margin: 0 20px;
+}
+
+:host ::ng-deep .mat-radio-button.mat-primary .mat-radio-outer-circle {
+  border: 3px solid #E0E5F2
+}
+
+:host ::ng-deep .mat-radio-button.mat-primary.mat-radio-checked .mat-radio-outer-circle {
+  border: 3px solid #0771DE
+}
+
+
+:host ::ng-deep .mat-radio-inner-circle {
+  display: none;
+}
+
+:host ::ng-deep .mat-radio-button .mat-radio-ripple {
+  display: none;
+}
+
+@media only screen and (max-width: 653px) {
+  .first-section-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second-section {
+    height: 100px;
+  }
+
+  .select-resource-type {
+    display: block;
+
+    span {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+    "dir": "rtl",
+    "resourceAdd": {
+        "addNewResource": "إضافة موارد جديدة",
+        "active": "مفعلة",
+        "saveChanges": "حفظ التغييرات",
+        "deleteResource": "حذف المورد"
+    },
+    "resourceBasicInfo": {
+        "resourceName": "اسم الموارد",
+        "selectResourceType": "اختر نوع الموارد",
+        "withinDay": "اختر نوع الموارد",
+        "resirvePeriod": "حجز مدة ( أكثر من يوم )"
+    },
+    "resourceTime": {
+        "resourceAvalibleTo": "المورد متاح إلى",
+        "year": "عام",
+        "month": "شهر",
+        "day": "يوم",
+        "resourceTime": "وقت المورد",
+        "serviceTime": "وقت الخدمة",
+        "timeIsConstant": "الوقت ثابت",
+        "multipleBooking": "الحجز المتعدد",
+        "onlyOneAmount": "حجز واحد فقط",
+        "bookingMoreThanOne": "حجز اكثر من شخص لنفس الموعد"
+    },
+    "resourceWeekDays": {
+        "supplierTime1": "حدد مواعيد العمل للمورد",
+        "supplierTime2": "تكوين إعدادات الأسبوع الخاص بك هنا. ما عليك سوى تحريك أشرطة التمرير وإضافة / إزالة أوقات الراحة لإعداد ساعات العمل.",
+        "advancedSettings": "إعدادات متقدمة",
+        "normalSettings": "إعدادات تقليدية",
+        "startTime": "وقت البدء",
+        "endTime": "وقت الإنتهاء",
+        "saturday": "السبت",
+        "sunday": "الاحد",
+        "monday": "الإثنين",
+        "tusday": "الثلاثاء",
+        "wednesday": "الأربعاء",
+        "thursday": "الخميس",
+        "friday": "الجمعة"
+    }
+}

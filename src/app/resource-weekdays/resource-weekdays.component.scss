@@ -1,0 +1,65 @@
+.component-wrapper {
+    border-radius: 12px;
+    background: #FBFBFB;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.supplierTime p:nth-child(1) {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.supplierTime p:nth-child(2) {
+    font-size: 16px;
+    color: #92A1AD;
+}
+
+.supplier-settings-options button {
+    height: 45px;
+}
+
+.days-inner-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.day-name-activation {
+    min-width: 120px;
+}
+
+.start-time-wrapper,
+.end-time-wrapper {
+    min-width: 240px;
+}
+
+mat-icon.add-row {
+    color: #92A1AD;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.dashes {
+    position: relative;
+    top: 10px;
+    font-size: 25px;
+}
+
+.vector-1 {
+    position: absolute;
+    height: 77px;
+    top: -57px;
+    right: 75px;
+    width: 2px;
+}
+
+.vector-2 {
+    position: absolute;
+    top: -6px;
+    right: 75px;
+}

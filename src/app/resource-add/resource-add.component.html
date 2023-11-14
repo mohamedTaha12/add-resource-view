@@ -1,0 +1,37 @@
+<div class="component-wrapper">
+  <form>
+    <div class="row add-resource-header">
+      <div class="col-md-4 add-new-resource-title">
+        <mat-icon class="arrow-back">arrow_forward</mat-icon>
+        <!-- <mat-icon class="arrow-back">arrow_right_alt</mat-icon> -->
+        <!-- <mat-icon class="arrow-back">arrow_right</mat-icon> -->
+        <span class="add-resource">{{"resourceAdd.addNewResource" | translate}}</span>
+      </div>
+
+      <div class="col-md-8 add-new-resource-actions d-flex justify-content-end">
+        <mat-slide-toggle class="example-margin" color="primary" [checked]="checked" [disabled]="disabled">
+          {{"resourceAdd.active" | translate}}
+        </mat-slide-toggle>
+        <button class="save-changes" mat-flat-button color="primary">{{"resourceAdd.saveChanges" | translate}}</button>
+        <button class="delete-resource" mat-stroked-button>
+          <img class="me-2" src="assets/images/trash.png" alt="">
+          <span>{{"resourceAdd.deleteResource" | translate}}</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-lg-6 mb-3">
+        <app-resource-basic-info></app-resource-basic-info>
+      </div>
+      <div class="col-lg-6 mb-3">
+        <app-resource-time></app-resource-time>
+      </div>
+    </div>
+    <div class="row mt-5 mb-3">
+      <div class="col-md-12">
+        <app-resource-weekdays></app-resource-weekdays>
+      </div>
+    </div>
+  </form>
+</div>
